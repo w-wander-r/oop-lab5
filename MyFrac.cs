@@ -10,6 +10,20 @@ public class MyFrac : IMyNumber<MyFrac>, IComparable<MyFrac>
     {
         if (denom == 0)
             throw new DivideByZeroException("Denominator cannot be zero.");
+        
+        // Знаходження найбільшого спільного дільника (НСД)
+        BigInteger gcd = BigInteger.GreatestCommonDivisor(nom, denom);
+        
+        // Скорочення дробу
+        this.nom = nom / gcd;
+        this.denom = denom / gcd;
+
+        // Перевірка знаку знаменника
+        if (this.denom < 0)
+        {
+            this.nom = -this.nom;
+            this.denom = -this.denom;
+        }
     }
 
     public MyFrac Add(MyFrac b)

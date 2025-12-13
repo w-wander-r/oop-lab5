@@ -1,0 +1,15 @@
+E:\study\2curs\ooooooooop\lab05\bin\Debug\net9.0\lab05.exe
+E:\study\2curs\ooooooooop\lab05\bin\Debug\net9.0\lab05.deps.json
+E:\study\2curs\ooooooooop\lab05\bin\Debug\net9.0\lab05.runtimeconfig.json
+E:\study\2curs\ooooooooop\lab05\bin\Debug\net9.0\lab05.dll
+E:\study\2curs\ooooooooop\lab05\bin\Debug\net9.0\lab05.pdb
+E:\study\2curs\ooooooooop\lab05\obj\Debug\net9.0\lab05.GeneratedMSBuildEditorConfig.editorconfig
+E:\study\2curs\ooooooooop\lab05\obj\Debug\net9.0\lab05.AssemblyInfoInputs.cache
+E:\study\2curs\ooooooooop\lab05\obj\Debug\net9.0\lab05.AssemblyInfo.cs
+E:\study\2curs\ooooooooop\lab05\obj\Debug\net9.0\lab05.csproj.CoreCompileInputs.cache
+E:\study\2curs\ooooooooop\lab05\obj\Debug\net9.0\lab05.sourcelink.json
+E:\study\2curs\ooooooooop\lab05\obj\Debug\net9.0\lab05.dll
+E:\study\2curs\ooooooooop\lab05\obj\Debug\net9.0\refint\lab05.dll
+E:\study\2curs\ooooooooop\lab05\obj\Debug\net9.0\lab05.pdb
+E:\study\2curs\ooooooooop\lab05\obj\Debug\net9.0\lab05.genruntimeconfig.cache
+E:\study\2curs\ooooooooop\lab05\obj\Debug\net9.0\ref\lab05.dll

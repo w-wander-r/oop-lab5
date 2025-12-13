@@ -1,0 +1,53 @@
+[33mcommit 414e7719aa73cde042f31c51beab10d42a049fa5[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: w-wander-r <wanderexe68@gmail.com>
+Date:   Sat Dec 13 10:17:45 2025 +0200
+
+    added empy classes for tests + tostring method for MyComplex class
+
+[33mcommit 117d040e0b719bb496fb318c4e104c64a2542971[m
+Author: w-wander-r <wanderexe68@gmail.com>
+Date:   Sat Dec 13 10:02:47 2025 +0200
+
+    implemented methods for Mycomplex
+
+[33mcommit 289233bb2eb7cd25c73503185b40cd459fa828b9[m
+Author: w-wander-r <wanderexe68@gmail.com>
+Date:   Sat Dec 13 09:54:11 2025 +0200
+
+    MyComplex class with Imynumber implemented
+
+[33mcommit a7af644f977f414f9e827e20dbcf104d20db17a1[m
+Author: w-wander-r <wanderexe68@gmail.com>
+Date:   Sat Dec 13 09:43:11 2025 +0200
+
+    tostring & compateto methods completed
+
+[33mcommit e56d89d8142f2a8b48b55cc094fb9e1c158b8e72[m
+Author: w-wander-r <wanderexe68@gmail.com>
+Date:   Sat Dec 13 09:41:25 2025 +0200
+
+    methods completed
+
+[33mcommit 63f1cb29b8f6a3e66b10bd65b80b53a7466b8a66[m
+Author: w-wander-r <wanderexe68@gmail.com>
+Date:   Sat Dec 13 09:31:04 2025 +0200
+
+    MyFrac implemented IMynuber & IComparable
+
+[33mcommit bf4af159ef1bf23a8b0c8d66cf9a1f5b54fc8857[m
+Author: w-wander-r <wanderexe68@gmail.com>
+Date:   Fri Dec 12 13:12:14 2025 +0200
+
+    MyFrac & MyComplex added
+
+[33mcommit ead76f402182d660457a364bb3ad5e14ef33ee3a[m
+Author: w-wander-r <wanderexe68@gmail.com>
+Date:   Fri Dec 12 13:08:54 2025 +0200
+
+    interface added
+
+[33mcommit 3b6757e4640f5bb3462b18d848ba99c00407ca7f[m
+Author: w-wander-r <wanderexe68@gmail.com>
+Date:   Fri Dec 12 13:06:14 2025 +0200
+
+    emtpy proj
