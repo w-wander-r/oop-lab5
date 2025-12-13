@@ -13,21 +13,29 @@ public class MyComplex : IMyNumber<MyComplex>
 
     public MyComplex Add(MyComplex b)
     {
-        return new MyComplex(0, 0);
+        return new MyComplex(this.re + b.re, this.im + b.im);
     }
 
     public MyComplex Subtract(MyComplex b)
     {
-        return new MyComplex(0, 0);
+        return new MyComplex(this.re - b.re, this.im - b.im);
     }
 
     public MyComplex Multiply(MyComplex b)
     {
-        return new MyComplex(0, 0);
+        double newRe = this.re * b.re - this.im * b.im;
+        double newIm = this.re * b.im + this.im * b.re;
+        return new MyComplex(newRe, newIm);
     }
 
     public MyComplex Divide(MyComplex b)
     {
-        return new MyComplex(0, 0);
+        double denominator = b.re * b.re + b.im * b.im;
+        if (denominator == 0)
+            throw new DivideByZeroException("Division by zero");
+
+        double newRe = (this.re * b.re + this.im * b.im) / denominator;
+        double newIm = (this.im * b.re - this.re * b.im) / denominator;
+        return new MyComplex(newRe, newIm);
     }
 }
