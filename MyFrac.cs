@@ -43,9 +43,15 @@ public class MyFrac : IMyNumber<MyFrac>, IComparable<MyFrac>
         return new MyFrac(newNom, newDenom);
     }
 
-    
+    public override string ToString()
+    {
+        return $"{nom}/{denom}";
+    }
+
     public int CompareTo(MyFrac other)
     {
-        return 0;
+        BigInteger left = this.nom * other.denom;
+        BigInteger right = other.nom * this.denom;
+        return left.CompareTo(right);
     }
 }
