@@ -14,22 +14,33 @@ public class MyFrac : IMyNumber<MyFrac>, IComparable<MyFrac>
 
     public MyFrac Add(MyFrac b)
     {
-        return new MyFrac(0, 0);
+        BigInteger newNom = this.nom * b.denom + this.denom * b.nom;
+        BigInteger newDenom = this.denom * b.denom;
+        return new MyFrac(newNom, newDenom);
     }
 
     public MyFrac Subtract(MyFrac b)
     {
-        return new MyFrac(0, 0);
+        BigInteger newNom = this.nom * b.denom - this.denom * b.nom;
+        BigInteger newDenom = this.denom * b.denom;
+        return new MyFrac(newNom, newDenom);
     }
 
     public MyFrac Multiply(MyFrac b)
     {
-        return new MyFrac(0, 0);
+        BigInteger newNom = this.nom * b.nom;
+        BigInteger newDenom = this.denom * b.denom;
+        return new MyFrac(newNom, newDenom);
     }
 
     public MyFrac Divide(MyFrac b)
     {
-        return new MyFrac(0, 0);
+         if (b.nom == 0)
+            throw new DivideByZeroException("Division by zero");
+        
+        BigInteger newNom = this.nom * b.denom;
+        BigInteger newDenom = this.denom * b.nom;
+        return new MyFrac(newNom, newDenom);
     }
 
     
