@@ -38,4 +38,10 @@ public class MyComplex : IMyNumber<MyComplex>
         double newIm = (this.im * b.re - this.re * b.im) / denominator;
         return new MyComplex(newRe, newIm);
     }
+
+    public override string ToString()
+    {
+        string sign = im >= 0 ? "+" : "";
+        return $"{re}{sign}{im}i";
+    }
 }
