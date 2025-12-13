@@ -9,7 +9,7 @@ public class MyFrac : IMyNumber<MyFrac>, IComparable<MyFrac>
     public MyFrac(BigInteger nom, BigInteger denom)
     {
         if (denom == 0)
-            throw new DivideByZeroException("Denominator cannot be zero.");
+            throw new DivideByZeroException("Denominator cannot be zero");
         
         // Знаходження найбільшого спільного дільника (НСД)
         BigInteger gcd = BigInteger.GreatestCommonDivisor(nom, denom);
@@ -19,6 +19,29 @@ public class MyFrac : IMyNumber<MyFrac>, IComparable<MyFrac>
         this.denom = denom / gcd;
 
         // Перевірка знаку знаменника
+        if (this.denom < 0)
+        {
+            this.nom = -this.nom;
+            this.denom = -this.denom;
+        }
+    }
+
+    public MyFrac(string str)
+    {
+        string[] parts = str.Split('/');
+        if (parts.Length != 2)
+            throw new ArgumentException("Invalid format. Should be 'a/b'");
+
+        if (!BigInteger.TryParse(parts[0], out nom) || !BigInteger.TryParse(parts[1], out denom))
+            throw new ArgumentException("Invalid format. Num and denom must be integers");
+
+        if (denom == 0)
+            throw new DivideByZeroException("Denominator cannot be zero");
+
+        BigInteger gcd = BigInteger.GreatestCommonDivisor(nom, denom);
+        this.nom = nom / gcd;
+        this.denom = denom / gcd;
+
         if (this.denom < 0)
         {
             this.nom = -this.nom;
@@ -64,6 +87,8 @@ public class MyFrac : IMyNumber<MyFrac>, IComparable<MyFrac>
 
     public int CompareTo(MyFrac other)
     {
+        // Порівняння a/b з c/d: 
+        // порівнюємо a*d та c*b
         BigInteger left = this.nom * other.denom;
         BigInteger right = other.nom * this.denom;
         return left.CompareTo(right);
